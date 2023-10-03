@@ -98,10 +98,4 @@ For more information about Cordova and React, refer to the following documentati
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Special thanks to [Author Name](link-to-author-profile) for the excellent tutorial on integrating React with Cordova.
-
-Feel free to customize this README with specific project details and acknowledgments.
-
 ---
