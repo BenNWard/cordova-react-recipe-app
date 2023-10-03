@@ -1,0 +1,33 @@
+{
+  "name": "dev.benward.recipe",
+  "displayName": "Recipe",
+  "version": "1.0.0",
+  "scripts": {
+    "cordova": "cordova",
+    "postinstall": "patch-package",
+    "run:android": "cordova run android -d",
+    "run:ios": "cordova run ios --debug -d",
+    "run:ios:release": "cordova run ios --release -d",
+    "setup": "npm install && npm run setup:ios && npm run setup:android",
+    "setup:android": "cordova platform add android",
+    "setup:ios": "cordova platform add ios"
+  },
+  "devDependencies": {
+    "cordova": "^12.0.0",
+    "cordova-android": "^12.0.1",
+    "cordova-ios": "^7.0.1",
+    "cordova-plugin-remote-injection": "^0.5.2",
+    "cordova-plugin-splashscreen": "^6.0.1",
+    "patch-package": "^8.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-remote-injection": {},
+      "cordova-plugin-splashscreen": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
