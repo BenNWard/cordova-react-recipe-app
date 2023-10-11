@@ -1,6 +1,7 @@
 {
   "name": "cordova-react-recipe-app",
   "version": "0.1.0",
+  "homepage": "https://bennward.github.io/cordova-react-recipe-app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -28,10 +29,13 @@
   },
   "devDependencies": {
     "@types/uuid": "^9.0.4",
+    "gh-pages": "^6.0.0",
     "react-scripts": "5.0.1"
   },
   "main": "index.tsx",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start-ssl": "set HTTPS=true&&npm start",
     "start": "react-scripts start",
     "build": "react-scripts build",
