@@ -84,12 +84,12 @@
 
     <!-- Misc permissions you may want in your app -->
     <platform name="ios">
-        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+        <!-- <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
             <string>access to the camera to take pictures and scan barcodes</string>
         </config-file>
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
             <string>access to your photo library for you to select pictures to upload</string>
-        </config-file>
+        </config-file> -->
         <!-- <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
             <string>location access to help find things nearby</string>
         </config-file>
@@ -100,4 +100,5 @@
             <string>access to your microphone to play audio during video streaming</string>
         </config-file> -->
     </platform>
+    
 </widget>

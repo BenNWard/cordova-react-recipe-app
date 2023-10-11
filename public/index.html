@@ -24,36 +24,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-    <style>
-      html {
-          border: 0;
-          margin: 0;
-          padding:0px;
-          width: 100%;
-          /* has to be vh and not % for IOS to fill entire phone screen */
-          height: 100vh;
-          overflow: hidden;
-      }
-      body {
-          border: 0;
-          margin: 0;
-          padding:0px;
-          /* Padding to avoid the "unsafe" areas behind notches in the screen */
-          padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
-          position: fixed;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-      }
-      * {
-          box-sizing: border-box;
-      }
-    </style>
   </head>
-  <body>
+  <body style="margin: 0; padding: 0; height: 85vh;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" style="height: 100%; width: 100%;"></div>
     <!--

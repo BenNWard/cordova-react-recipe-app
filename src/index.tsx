@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//index.tsx
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "@mui/material/styles";
+import { BrowserRouter as Router } from "react-router-dom";
+import { theme } from "./theme"; // Import your Material-UI theme
+import { UserProvider } from "./context/UserContext";
+import { MenuProvider } from "./context/MenuContext";
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+root.render(
+  <React.StrictMode>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <UserProvider>
+            <MenuProvider>
+              <App />
+            </MenuProvider>
+          </UserProvider>
+        </Router>
+      </ThemeProvider>
+  </React.StrictMode>
+);
+
 reportWebVitals();
